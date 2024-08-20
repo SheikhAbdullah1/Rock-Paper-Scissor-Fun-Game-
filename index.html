@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Popup for Game Starting Options -->
+    <div id="start-popup" class="popup">
+        <div class="popup-content">
+            <h2>Start Game</h2>
+            <p>Select the points to win:</p>
+            <!-- Buttons to select points required to win the game -->
+            <button class="points-btn" data-points="3">3 Points</button>
+            <button class="points-btn" data-points="5">5 Points</button>
+            <button class="points-btn" data-points="10">10 Points</button>
+        </div>
+    </div>
+
+    <!-- Main Game Area -->
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <!-- Player choices with images -->
+        <div class="choice" id="rock">
+            <img src="./images/rock.jpg" alt="Rock">
+        </div>
+        <div class="choice" id="paper">
+            <img src="./images/paper1.jpg" alt="Paper">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="./images/scissors1.jpg" alt="Scissors">
+        </div>
+    </div>
+
+    <!-- Scoreboard for User and Computer -->
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Robot</p>
+        </div>
+    </div>
+
+    <!-- Message Area for Game Updates -->
+    <div class="msg-container">
+        <p id="msg">Play your move!</p>
+    </div>
+
+    <!-- Reset Game Button -->
+    <button id="reset-btn">Reset Game</button>
+
+    <!-- Linking the JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>

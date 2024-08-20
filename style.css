@@ -1,0 +1,145 @@
+/* General Style Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Game Title */
+h1 {
+  background-color: #f76c6c;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+/* Choice Buttons Styling */
+.choice {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  background-color: #f7b731;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Choices Container */
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Scoreboard Design */
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.score {
+  text-align: center;
+}
+
+#user-score, #comp-score {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #f76c6c;
+}
+
+/* Message Container */
+.msg-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#msg {
+  background-color: #f76c6c;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Popup Styling */
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #ffe29f;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.points-btn {
+  background-color: #f76c6c;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.points-btn:hover {
+  background-color: #f8a5c2;
+}
+
+/* Reset Button Styling */
+#reset-btn {
+  background-color: #f76c6c;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+#reset-btn:hover {
+  background-color: #f8a5c2;
+}
